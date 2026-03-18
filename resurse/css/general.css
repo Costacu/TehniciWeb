@@ -1,0 +1,117 @@
+body{
+    --culoare_fundal: rgb(255, 255, 255);
+    --culoare1: red;
+    --culoare2: blue;
+    --culoare3: black;
+    --culoare-contur: purple;
+    --margine_pagina: 150px;
+    background-color: var(--culoare_fundal);
+}
+
+main{
+    margin-left: var(--margine_pagina);
+    margin-right: var(--margine_pagina);
+}
+
+
+
+@media screen and (max-width: 700px){
+    body{
+        --margine_pagina: 30;
+    }
+
+    #grid-pagina{
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+#grid-pagina{
+    display:grid;
+    gap: 10px;
+    padding:10px;
+    /*grid pe 3 coloane*/
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "z-welcome z-welcome z-welcome"
+                         "promotii promotii anunturi"
+                         "fig1 orar orar"
+                         "fig2 orar orar"
+                         "fig3 orar orar"
+                         "produse produse produse"
+                         "index-intrebari index-intrebari index-intrebari";
+}
+
+
+
+#grid-pagina>*{
+    border: 1px solid var(--culoare-contur);
+    padding:10px;
+    box-shadow: 10px 0px 5px;
+
+}
+
+
+ 
+#welcome{
+    grid-area: z-welcome;
+}
+#promotii{
+    grid-area: promotii;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#orar{
+    grid-area: orar;
+}
+ 
+#fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#produse{
+    grid-area: produse;
+}
+#index-intrebari{
+    grid-area: index-intrebari;
+}
+
+figure{
+    margin: 0;
+}
+
+figure > img{
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    body{
+        --margine_pagina: 80px;
+    }
+    #grid-pagina{
+    grid-template-columns: 1fr 1fr;
+    /*grid pe 3 coloane*/
+    grid-template-areas: "z-welcome z-welcome"
+                         "promotii promotii"
+                         "anunturi anunturi"
+                         "fig1 orar"
+                         "fig2 orar"
+                         "fig3 orar"
+                         "produse produse"
+                         "index-intrebari index-intrebari";
+    }
+}
