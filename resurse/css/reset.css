@@ -1,0 +1,100 @@
+:root {
+    --reset-space-0: 0;
+    --reset-list-indent: 1.5rem;
+    --reset-table-border: 0.0625rem;
+    --reset-color-fg: inherit;
+    --reset-color-bg: transparent;
+    --reset-line-height: 1;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,
+sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,
+header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: var(--reset-space-0);
+    padding: var(--reset-space-0);
+    border: var(--reset-space-0);
+    font-size: 100%;
+    font: inherit;
+    color: var(--reset-color-fg);
+    background-color: var(--reset-color-bg);
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: var(--reset-line-height);
+}
+
+ol,
+ul {
+    list-style: none;
+    padding-inline-start: var(--reset-list-indent);
+}
+
+li {
+    list-style-position: outside;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: var(--reset-space-0);
+    border: var(--reset-table-border) solid transparent;
+}
+
+th,
+td {
+    text-align: inherit;
+    font-weight: normal;
+}
