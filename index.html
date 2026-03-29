@@ -24,17 +24,62 @@
     <header>
         <h1>Gridline F1</h1>
         <img src="./resurse/imagini/logo-f1.jpg" alt="sigla magazin f1" />
-        <nav>
-            <ul>
-                <li><a href="#welcome">Acasă</a>
-                    <ul>
-                        <li><a href="#welcome">Bine ați venit</a></li>
-                        <li><a href="#promotii">Promoții</a></li>
+        <nav class="meniu-site">
+            <input type="checkbox" id="toggle-meniu" class="toggle-meniu" aria-label="Deschide sau inchide meniul" />
+            <label for="toggle-meniu" class="buton-meniu" aria-label="Meniu">
+                <span class="hamburger-icon" aria-hidden="true">
+                    <span class="bara-hamburger"></span>
+                    <span class="bara-hamburger"></span>
+                    <span class="bara-hamburger"></span>
+                </span>
+            </label>
+
+            <ul class="meniu-principal">
+                <li>
+                    <a href="#welcome">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="text-optiune">Acasă</span>
+                    </a>
+                </li>
+
+                <li class="are-submeniu">
+                    <a href="#produse">
+                        <i class="fa-solid fa-store"></i>
+                        <span class="text-optiune">Magazin</span>
+                    </a>
+                    <ul class="submeniu">
+                        <li><a href="index.html#produse">Produse (pagina curentă)</a></li>
+                        <li><a href="galerie-statica.html">Galerie statică</a></li>
+                        <li><a href="galerie-dinamica.html">Galerie dinamică</a></li>
                     </ul>
                 </li>
-                <li><a href="#produse">Produse</a></li>
-                <li><a href="#evenimente">Evenimente</a></li>
-                <li><a href="#resurse-utile">Resurse</a></li>
+
+                <li class="are-submeniu">
+                    <a href="#welcome">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span class="text-optiune">Secțiuni</span>
+                    </a>
+                    <ul class="submeniu">
+                        <li><a href="#welcome">Bine ați venit</a></li>
+                        <li><a href="#promotii">Promoții</a></li>
+                        <li><a href="#media">Media F1</a></li>
+                        <li><a href="#formula-mathml">Formula fizică</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#evenimente">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="text-optiune">Evenimente</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resurse-utile">
+                        <i class="fa-solid fa-link"></i>
+                        <span class="text-optiune">Resurse</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -63,7 +108,7 @@
                     <picture>
                         <source srcset="resurse/imagini/monopost-mobil.jpg" media="(max-width:500px)" />
                         <source srcset="resurse/imagini/monopost-tableta.jpg" media="(max-width:1000px)" />
-                        <img src="./resurse/imagini/Abu Dhabi 2025.png" alt="monopost formula 1 pe circuit" />
+                        <img src="./resurse/imagini/Abu Dhabi 2025.png" alt="Imagine de la ultima cursă din sezon" />
                     </picture>
                     <figcaption>Imagine de la ultima cursă din sezon</figcaption>
                 </figure>
@@ -214,7 +259,7 @@
 
                 <section id="formula-mathml">
                     <h2>Formula Downforce-ului Aerodinamic</h2>
-                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="formula-pitstop" aria-label="forta de apasare aerodinamica egala cu o jumatate ori densitatea aerului ori coeficientul de portanta ori aria frontala ori viteza la patrat">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="formula-downforce" aria-label="forta de apasare aerodinamica egala cu o jumatate ori densitatea aerului ori coeficientul de portanta ori aria frontala ori viteza la patrat">
                         <mrow>
                             <msub><mi class="simbol-scor">F</mi><mi class="indice-perf">down</mi></msub>
                             <mo class="operator-egal">=</mo>
@@ -298,6 +343,7 @@
             Email suport: <a href="mailto:contact@gridline.ro">contact@gridline.ro</a><br>
             Chat Live: <a href="https://wa.me/40700000000" target="_blank">Deschide WhatsApp</a>
         </address>
+        <p class="banner-print">Acesta este un proiect școlar!</p>
         <p><a href="#top">Înapoi la începutul paginii</a></p>
         <p><small>Copyright © <time datetime="2024-03-20">20 martie 2024</time> Stefan Costache. Toate drepturile rezervate.</small></p>
     </footer>
