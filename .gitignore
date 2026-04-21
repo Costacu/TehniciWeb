@@ -1,0 +1,6 @@
+node_modules/
+temp/
+logs/
+backup/
+fisiere_uploadate/
+resurse/css/*.map

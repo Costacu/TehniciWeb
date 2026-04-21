@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <%- include('../fragmente/head') %>
+</head>
+
+<body id="inceput-pagina">
+  <%- include('../fragmente/header') %>
+
+  <main>
+    <div id="grid-pagina">
+      <section id="error-section">
+        <h2><%= titlu %></h2>
+        <p><%= text %></p>
+        <% if (imagine) { %>
+          <img src="<%= imagine %>" alt="<%= titlu %>" style="max-width: 100%; height: auto; margin: 20px 0;">
+        <% } %>
+        <p><a href="/">Înapoi la pagina principală</a></p>
+      </section>
+    </div>
+  </main>
+
+  <%- include('../fragmente/footer') %>
+</body>
+
+</html>

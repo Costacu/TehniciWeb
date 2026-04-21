@@ -1,0 +1,33 @@
+{
+  "cale_baza": "resurse/imagini/",
+  "eroare_default": {
+    "identificator": 0,
+    "status": 404,
+    "titlu": "Pagina nu a fost gasita",
+    "text": "Resursa ceruta nu exista sau a fost mutata.",
+    "imagine": "Abu Dhabi 2025.png"
+  },
+  "info_erori": [
+    {
+      "identificator": 400,
+      "status": 400,
+      "titlu": "Cerere incorecta",
+      "text": "Cererea contine o extensie EJS sau parametri invalizi.",
+      "imagine": "volan-f1.png"
+    },
+    {
+      "identificator": 403,
+      "status": 403,
+      "titlu": "Acces interzis",
+      "text": "Nu ai voie sa accesezi direct un folder din resurse fara fisier specific.",
+      "imagine": "casca-pilot.jpg"
+    },
+    {
+      "identificator": 404,
+      "status": 404,
+      "titlu": "Resursa lipsa",
+      "text": "Pagina solicitata nu exista in aplicatie.",
+      "imagine": "monopost.jpg"
+    }
+  ]
+}

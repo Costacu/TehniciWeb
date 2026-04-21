@@ -1,0 +1,17 @@
+WEBVTT
+
+STYLE
+::cue {
+  color: #15151e;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+00:00:00.000 --> 00:00:06.500 line:90% position:50% align:center size:50%
+F1 2025 Overtake of The Year
+Verstappen vs. Piastri
+
+00:00:08.000 --> 00:00:13.500 line:90% position:50% align:center
+The overtake happens at the Emilia-Romagna Grand Prix.
+
+00:00:15.000 --> 00:00:20.500 line:90% position:50% align:center
+An overtake that leads to Max Verstappen's victory.

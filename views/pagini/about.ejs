@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <%- include('../fragmente/head') %>
+</head>
+
+<body id="inceput-pagina">
+  <%- include('../fragmente/header') %>
+
+  <main>
+    <div id="grid-pagina">
+      <section id="about">
+        <hgroup>
+          <h2>Despre Noi</h2>
+          <p class="subtitlu">Istoria și misiunea magazinului nostru</p>
+        </hgroup>
+
+        <p>Magazinul nostru tematic de Formula 1 a fost construit pentru a afișa produse, resurse și conținut multimedia într-o structură clară, separată pe pagini și fragmente.</p>
+        <p>Scopul este să păstrăm o bază ușor de întreținut, cu rute Express, șabloane EJS și resurse servite dintr-un folder dedicat.</p>
+
+        <h3>Valorile Noastre</h3>
+        <ul>
+          <li>Calitate - doar conținut organizat și clar</li>
+          <li>Transparență - structura site-ului este explicită</li>
+          <li>Suport - pagini separate și reutilizare de fragmente</li>
+          <li>Comunitate - un site ușor de extins cu secțiuni noi</li>
+        </ul>
+
+        <details>
+          <summary>De ce să alegi acest site?</summary>
+          <p>Pentru că păstrează conținutul tematic, dar îl trece într-o aplicație Node.js conform cerințelor.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <a id="link-top" href="#inceput-pagina" title="Mergi la începutul paginii">
+    <span class="simbol-top" aria-hidden="true">
+      <span id="triunghi"></span>
+    </span>
+    <span class="text-link-top">Back to top</span>
+  </a>
+
+  <%- include('../fragmente/footer') %>
+</body>
+
+</html>

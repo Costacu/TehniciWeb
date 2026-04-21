@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <%- include('../fragmente/head') %>
+  <style>
+    .galerie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .galerie-grid figure {
+      background: #fff;
+      border: 1px solid rgba(21, 21, 30, 0.12);
+      border-radius: 0.8rem;
+      padding: 0.75rem;
+      box-shadow: 0 0.4rem 1rem rgba(21, 21, 30, 0.08);
+    }
+
+    .galerie-grid img {
+      width: 100%;
+      border-radius: 0.6rem;
+    }
+  </style>
+</head>
+
+<body id="inceput-pagina">
+  <%- include('../fragmente/header') %>
+
+  <main>
+    <section>
+      <h2>Galerie statică</h2>
+      <p>Imagini din lumea F1, alese din resursele existente ale proiectului.</p>
+      <div class="galerie-grid">
+        <figure>
+          <img src="/resurse/imagini/Abu%20Dhabi%202025.png" alt="Abu Dhabi 2025">
+          <figcaption>Imagine de pe circuit</figcaption>
+        </figure>
+        <figure>
+          <img src="/resurse/imagini/monopost.jpg" alt="Monopost">
+          <figcaption>Monopost</figcaption>
+        </figure>
+        <figure>
+          <img src="/resurse/imagini/casca-pilot.jpg" alt="Cască pilot">
+          <figcaption>Echipament pilot</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <%- include('../fragmente/footer') %>
+</body>
+
+</html>

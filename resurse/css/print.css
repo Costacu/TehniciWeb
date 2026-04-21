@@ -1,0 +1,14 @@
+@media print {
+  nav,
+  #link-top,
+  .banner-print,
+  iframe,
+  video {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

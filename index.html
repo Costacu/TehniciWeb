@@ -106,26 +106,12 @@
                 </hgroup>
                 <figure>
                     <picture>
-                        <source srcset="resurse/imagini/monopost-mobil.jpg" media="(max-width:500px)" />
-                        <source srcset="resurse/imagini/monopost-tableta.jpg" media="(max-width:1000px)" />
-                        <img src="./resurse/imagini/Abu Dhabi 2025.png" alt="Imagine de la ultima cursă din sezon" />
+                        <source srcset="resurse/imagini/monopost.jpg" media="(max-width:500px)" />
+                        <source srcset="resurse/imagini/Abu%20Dhabi%202025.png" media="(max-width:1000px)" />
+                        <img src="./resurse/imagini/Abu%20Dhabi%202025.png" alt="Imagine de la ultima cursă din sezon" />
                     </picture>
                     <figcaption>Imagine de la ultima cursă din sezon</figcaption>
                 </figure>
-                <div id="container-video">
-                    <img style="width:50%" class="farfurie" src="resurse/imagini/volan-f1.png" alt="volan f1" title="Volan de monopost">
-                    <div id="centrare-video">
-                        <div id="clip-video">
-                            <div id="stil-video">
-                                <video width="320" height="240" playsinline autoplay loop muted>
-                                    <source src="resurse/video/pitstop.mp4" type="video/mp4">
-                                    <source src="resurse/video/pitstop.ogv" type="video/ogv">
-                                    <track default src="data:text/vtt;base64,V0VCVlRUIC0gRjENCg0KMDA6MDAuMDAwIC0tPiAwMDowMy4wMDANClN0YXJ0dWwgY3Vyc2VpISEhDQoNCjAwOjAzLjAwMCAtLT4gMDA6MDcuMDAwDQpDZSBkZXDEg8iZaXJlIHBlIGludGVyaW9yISEhDQoNCjAwOjA5LjAwMCAtLT4gMDA6MTQuMDAwDQpNb25vcG9zdHVsIGludHLEgyBsYSBib3hlLg0KDQowMDoxNC41MDAgLS0+IDAwOjE5LjAwMA0KVW4gcGl0c3RvcCBkZSBkb2FyIDIgc2VjdW5kZSE=" kind="captions" srclang="ro" label="romana">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <p class="intro">Vă mulțumim că ne vizitați magazinul. Adăugați în coș pasiunea pentru viteză. Start joc!</p>
                 <p class="anunt intro">Echipamentul echipei favorite ajunge direct la tine acasă, în ritm de pit-stop, cu ajutorul ofertei noastre de livrare rapidă prin curier.</p>
                 <hr class="linie-decor" />
@@ -314,6 +300,22 @@
                             referrerpolicy="strict-origin-when-cross-origin" 
                             allowfullscreen>
                         </iframe>
+                    </div>
+
+                    <div id="container-video">
+                        <div id="centrare-video">
+                            <div id="clip-video">
+                                <div id="stil-video">
+                                    <video class="video-vtt" playsinline controls preload="metadata" poster="resurse/imagini/Poster%20Video.png">
+                                        <source src="resurse/video/F1%202025%20Overtake%20of%20The%20Year.mp4" type="video/mp4">
+                                        <source src="resurse/video/F1%202025%20Overtake%20of%20The%20Year.mkv" type="video/x-matroska">
+                                        <track default kind="subtitles" src="resurse/subtitles/ro.vtt" srclang="ro" label="Română">
+                                        <track kind="subtitles" src="resurse/subtitles/en.vtt" srclang="en" label="English">
+                                        Browserul tău nu suportă elementul video HTML5.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </section>

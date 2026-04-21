@@ -10,6 +10,7 @@ body {
     --culoare_inchisa: #15151e;
     --culoare_secundara: #f4f4f4;
     --culoare_contur: #b3b3b3;
+    --culoare_link_vizitat: #6d3a8c;
     --margine_pagina: 8rem;
     --padding-text: 1.5rem;
     
@@ -286,6 +287,15 @@ figure > img {
     z-index: 1;
 }
 
+#media #container-video {
+    margin-top: 1.2rem;
+}
+
+.farfurie {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
 @media screen and (max-width: 1200px) {
     html {
         font-size: 16px;
@@ -507,7 +517,7 @@ figure > img {
     position: relative;
     font-size: 28px;
     font-weight: bold;
-    color: var(--culoare_accent);
+    color: #fff;
     z-index: 2;
 }
 
@@ -1072,4 +1082,66 @@ figure > img {
         background: #fff;
         z-index: 9999;
     }
+}
+
+/* Cerinta video-vtt */
+#container-video,
+#centrare-video,
+#clip-video,
+#stil-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-vtt {
+    width: 100%;
+    min-width: 250px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.video-vtt::cue {
+    color: var(--culoare_inchisa);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Cerinta stilizare-linkuri */
+a:visited {
+    color: var(--culoare_link_vizitat);
+}
+
+a[href^="http"]::before {
+    content: "⮳";
+    font-size: 1.5em;
+    margin-right: 0.2em;
+    color: var(--culoare_accent);
+    transition: color 0.25s ease;
+}
+
+a[href^="http"]:hover::before {
+    color: var(--culoare_inchisa);
+}
+
+main a:not([href^="http"]) {
+    background-image: radial-gradient(circle, rgba(225, 6, 0, 0.32) 0%, rgba(225, 6, 0, 0.32) 40%, transparent 80%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0 0;
+    transition: background-size 0.35s ease;
+}
+
+main a:not([href^="http"]):hover {
+    background-size: 100% 100%;
+}
+
+a:active {
+    border: 2px solid var(--culoare_accent);
+}
+
+footer a[href^="http"]::before,
+footer a[href^="http"]:hover::before {
+    color: #fff;
 }

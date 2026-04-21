@@ -1,0 +1,23 @@
+{
+  "name": "gridline-f1-store",
+  "version": "1.0.0",
+  "description": "Site Gridline F1 servit cu Node.js, Express si EJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "ejs",
+    "f1"
+  ],
+  "author": "Stefan Costache",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "sass": "^1.80.6"
+  }
+}

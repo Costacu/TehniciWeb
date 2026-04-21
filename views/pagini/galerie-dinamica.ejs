@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <%- include('../fragmente/head') %>
+  <style>
+    .galerie-dinamica {
+      max-width: 720px;
+      margin: 1rem auto;
+      text-align: center;
+    }
+
+    .galerie-dinamica img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+    }
+
+    .meta {
+      margin-top: 0.6rem;
+      font-weight: 600;
+      color: var(--culoare_accent);
+    }
+  </style>
+</head>
+
+<body id="inceput-pagina">
+  <%- include('../fragmente/header') %>
+
+  <main>
+    <section class="galerie-dinamica">
+      <h2>Rulare automată imagini</h2>
+      <img id="img-galerie" src="/resurse/imagini/Abu%20Dhabi%202025.png" alt="Imagine galerie">
+      <p id="meta-galerie" class="meta">Abu Dhabi 2025</p>
+    </section>
+  </main>
+
+  <script>
+    const imagini = [
+      { src: '/resurse/imagini/Abu%20Dhabi%202025.png', text: 'Abu Dhabi 2025' },
+      { src: '/resurse/imagini/monopost.jpg', text: 'Monopost' },
+      { src: '/resurse/imagini/casca-pilot.jpg', text: 'Cască pilot' }
+    ];
+
+    const imagine = document.getElementById('img-galerie');
+    const meta = document.getElementById('meta-galerie');
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % imagini.length;
+      imagine.src = imagini[index].src;
+      meta.textContent = imagini[index].text;
+    }, 2500);
+  </script>
+
+  <%- include('../fragmente/footer') %>
+</body>
+
+</html>
